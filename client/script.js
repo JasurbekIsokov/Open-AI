@@ -17,3 +17,18 @@ function loader(element) {
     if (loadInterval === "....") element.textContent = "";
   }, 300);
 }
+
+// type text
+
+function typeText(element, text) {
+  let index = 0;
+
+  let interval = setInterval(() => {
+    if (index < text.length) {
+      element.innerHtml += text.chartAt(index);
+      index++;
+    } else {
+      clearInterval(interval);
+    }
+  }, 20);
+}
