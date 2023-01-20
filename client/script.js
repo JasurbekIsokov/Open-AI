@@ -32,3 +32,13 @@ function typeText(element, text) {
     }
   }, 20);
 }
+
+// Generate Unique Id
+
+function generateUniqueId() {
+  let timeStamp = Date.now();
+  const randomNumber = Math.random();
+  const hexaDecimalString = randomNumber.toString(16);
+
+  return `id-${timeStamp}-${hexaDecimalString}`;
+}
