@@ -88,6 +88,8 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 };
 
+//Form Add Event Listener
+
 form.addEventListener("submit", handleSubmit);
 form.addEventListener("keyup", (e) => {
   if (e.keyCode === 13) {
